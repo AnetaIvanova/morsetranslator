@@ -12,9 +12,17 @@ export const translateEnglishToMorse = (text) => {
     case "b":
       return "-...";
       break;
-    case "andy":
-      return ".- -. -.. -.--'";
+    case "aneta":
+      return ".- -. . - .-";
       break;
+    case "computer":
+      return "-.-. --- -- .--. ..- - . .-.";
+      break;
+    case "ship":
+      return "... .... .. .--.";
+      break;
+    case "sea":
+      return "... . .-";
     default:
       return "Unknown word";
   }

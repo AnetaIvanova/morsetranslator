@@ -11,7 +11,22 @@ it("Should translate b to -...", () => {
   expect(result).toBe("-...");
 });
 
-it("Should translate andy to .- -. -.. -.--", () => {
-  const result = translateEnglishToMorse("andy");
-  expect(result).toBe(".- -. -.. -.--'");
+it("Should translate aneta to .- -. . - .-", () => {
+  const result = translateEnglishToMorse("aneta");
+  expect(result).toBe(".- -. . - .-");
+});
+
+it("Should translate computer to -.-. --- -- .--. ..- - . .-.", () => {
+  const result = translateEnglishToMorse("computer");
+  expect(result).toBe("-.-. --- -- .--. ..- - . .-.");
+});
+
+it("Should translate ship to ... .... .. .--.", () => {
+  const result = translateEnglishToMorse("ship");
+  expect(result).toBe("... .... .. .--.");
+});
+
+it("Should translate sea to ... . .-", () => {
+  const result = translateEnglishToMorse("sea");
+  expect(result).toBe("... . .-");
 });
