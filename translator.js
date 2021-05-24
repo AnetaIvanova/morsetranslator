@@ -3,7 +3,7 @@
 // };
 
 export const translateEnglishToMorse = (text) => {
-  switch (translateEnglishToMorse) {
+  switch (text) {
     case "a":
       return ".-";
       break;
