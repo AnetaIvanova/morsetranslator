@@ -1,0 +1,15 @@
+{
+  "name": "andysmorsecode",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "scripts": {
+    "test": "jest js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.14.2",
+    "jest": "^26.6.3"
+  },
+  "description": ""
+}
