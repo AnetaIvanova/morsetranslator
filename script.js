@@ -1,8 +1,9 @@
 import { translateEnglishToMorse } from "./translator.js";
 
-//const button = document.querySelector("button");
-const button = document.addEventListener("click", () => {
-  let text = document.getElementById("english-test").nodeValue;
-  const result = translate(text);
-  alert(result);
-});
+const button = document
+  .querySelector("button")
+  .addEventListener("click", () => {
+    let text = document.getElementById("english-text").value;
+    const result = translateEnglishToMorse(text);
+    alert(result);
+  });
