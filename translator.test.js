@@ -1,32 +1,42 @@
 import { expect } from "@jest/globals";
-import { translateEnglishToMorse } from "./translator.js";
+import { translateInput } from "./translator.js";
 
 it("Should translate a to .-", () => {
-  const result = translateEnglishToMorse("a");
+  const result = translateInput("a");
   expect(result).toBe(".-");
 });
 
 it("Should translate b to -...", () => {
-  const result = translateEnglishToMorse("b");
+  const result = translateInput("b");
   expect(result).toBe("-...");
 });
 
 it("Should translate aneta to .- -. . - .-", () => {
-  const result = translateEnglishToMorse("aneta");
+  const result = translateInput("aneta");
   expect(result).toBe(".- -. . - .-");
 });
 
 it("Should translate computer to -.-. --- -- .--. ..- - . .-.", () => {
-  const result = translateEnglishToMorse("computer");
+  const result = translateInput("computer");
   expect(result).toBe("-.-. --- -- .--. ..- - . .-.");
 });
 
 it("Should translate ship to ... .... .. .--.", () => {
-  const result = translateEnglishToMorse("ship");
+  const result = translateInput("ship");
   expect(result).toBe("... .... .. .--.");
 });
 
 it("Should translate sea to ... . .-", () => {
-  const result = translateEnglishToMorse("sea");
+  const result = translateInput("sea");
   expect(result).toBe("... . .-");
+});
+
+it("Should translate integers to morse", () => {
+  const result = translateInput("123");
+  expect(result).toBe(".---- ..--- ...--");
+});
+
+it("Should translate special characters to morse", () => {
+  const result = translateInput("?=/");
+  expect(result).toBe("..--.. -...- -..-.");
 });

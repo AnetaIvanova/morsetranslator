@@ -1,29 +1,65 @@
-// export const translateEnglishToMorse = (english) => {
-//   // ... leave this blank for now
-// };
-
-export const translateEnglishToMorse = (text) => {
-  // const value = text;
-
-  switch (text) {
-    case "a":
-      return ".-";
-      break;
-    case "b":
-      return "-...";
-      break;
-    case "aneta":
-      return ".- -. . - .-";
-      break;
-    case "computer":
-      return "-.-. --- -- .--. ..- - . .-.";
-      break;
-    case "ship":
-      return "... .... .. .--.";
-      break;
-    case "sea":
-      return "... . .-";
-    default:
-      return "Unknown word";
-  }
+const englishToMorse = {
+  A: ".-",
+  B: "-...",
+  C: "-.-.",
+  D: "-..",
+  E: ".",
+  F: "..-.",
+  G: "--.",
+  H: "....",
+  I: "..",
+  J: ".---",
+  K: "-.-",
+  L: ".-..",
+  M: "--",
+  N: "-.",
+  O: "---",
+  P: ".--.",
+  Q: "--.-",
+  R: ".-.",
+  S: "...",
+  T: "-",
+  U: "..-",
+  V: "...-",
+  W: ".--",
+  X: "-..-",
+  Y: "-.--",
+  Z: "--..",
+  " ": " ",
+  1: ".----",
+  2: "..---",
+  3: "...--",
+  4: "....-",
+  5: ".....",
+  6: "-....",
+  7: "--...",
+  8: "---..",
+  9: "----.",
+  0: "-----",
+  "'": ".----.",
+  "/": "-..-.",
+  ",": "--..--",
+  '"': ".-..-.",
+  ":": "---...",
+  "-": "-....-",
+  "=": "-...-",
+  "?": "..--..",
+  "[": "-.--.",
+  "(": "-.--.",
+  ")": "-.--.-",
+  "]": "-.--.-",
+  ";": "-.-.-.",
+  ".": ".-.-.-",
+  "+": ".-.-.",
+  ":": "---...",
 };
+
+export const translateInput = (text) => {
+  const inputSplit = text.toUpperCase().split("");
+  const inputForTransl = inputSplit.map((string) => {
+    return englishToMorse[string] ? englishToMorse[string] : string;
+  });
+  return inputForTransl.join(" ");
+};
+
+

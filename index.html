@@ -4,17 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Morse Decoder</title>
   </head>
   <body>
-    <main>Translate your text from English to Morse</main>
-    <input
-      id="english-text"
-      type="text"
-      placeholder="Write a word in english"
-    />
-    <button>translate</button>
-    <h3>Translation to morse:</h3>
+    <main class="container">Morse Decoder
+      <br>
+      <br>
+    <div class="language">
+      <input
+        class="english-to-morse"
+        id="english-text"
+        type="text"
+        placeholder="Write a word in english"
+      />
+    </div>
+    <button class="translate" id="translation">translate</button>
+    <button class="clear" id="clear-output">clear</button>
+    <div class="morse">
+      <input class="morse-translated" id="morse-text" type="text" />
+    </div>
+    </main>
+    </body>
     <script src="./script.js" type="module"></script>
   </body>
 </html>
