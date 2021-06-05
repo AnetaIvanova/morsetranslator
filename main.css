@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("picture/calmsea.jpg");
+}
+
 h2 {
-  color: grey;
+  color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
+  font-weight: 200;
 }
 .container {
   display: grid;
