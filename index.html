@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Morse Decoder</title>
   </head>
   <body>
-    <main class="container">Morse Decoder
-      <br>
-      <br>
+    <main class="container">
+  <h2 class="header">Morse Decoder</h2>
     <div class="language">
       <input
         class="english-to-morse"
         id="english-text"
         type="text"
-        placeholder="Write a word in english"
+        placeholder="Your text" 
       />
     </div>
-    <button class="translate" id="translation">translate</button>
-    <button class="clear" id="clear-output">clear</button>
+    <button class="button" id="translation">translate</button>
+    <button class="button" id="clear-output">clear</button>
     <div class="morse">
       <input class="morse-translated" id="morse-text" type="text" />
     </div>
