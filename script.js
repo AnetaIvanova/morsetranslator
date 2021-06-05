@@ -11,7 +11,7 @@ translateButton.addEventListener("click", () => {
   if (result !== undefined || result !== null) {
     result.value = translateInput(output);
   } else {
-    alert("Invalid input");
+    alert("Try again");
   }
 });
 
